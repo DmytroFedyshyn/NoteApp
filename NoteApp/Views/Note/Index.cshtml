@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Note>
+
+<h3>Notes</h3>
+
+@foreach(var item in @Model){
+    <p>@item.Name</p>
+    <p>@item.Description</p>
+    <p>@item.CreatedDate</p>
+    <br />
+    <br />
+}
